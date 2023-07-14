@@ -133,39 +133,27 @@ button {
     border-radius: 5px;
 }
 
-@media screen and (min-width: 641px) and (max-width: 1023px) {
-    /*.container {
-        max-width: 90%;
+@media screen and (min-width: 641px) and (max-width: 1023px) {  
+    section .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
-    .container-div ul li {
-        grid-template-columns: repeat(2, 49%);
-    }*/
+    .about-responsivo h2,
+    .about-responsivo p {
+        text-align: left;
+    }
 
-    /* Estilos para tablets (641px - 1023px) */
-
-@media screen and (min-width: 641px) and (max-width: 1023px) {
-    /* Estilos para o cabeçalho */
-    header {
-        padding: 16px 0;
+    .loja {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        margin: 0;
+        margin-bottom: 20px;
     }
     
-    header nav li {
-        font-size: 16px;
-        margin-left: 12px;
-    }
-    
-    /* Estilos para a seção "Sobre a loja" */
-    #about img {
-        max-width: 400px;
-    }
-    
-    section h2 {
-        font-size: 24px;
-        margin-bottom: 24px;
-    }
-    
-    /* Estilos para a lista de produtos */
     .lista-produtos li {
         max-width: 48%;
         margin-bottom: 16px;
@@ -174,20 +162,49 @@ button {
     .lista-produtos li img {
         width: 100%;
         height: auto;
-    }
+    } 
+}
 
-    #about {
+@media screen and (max-width: 640px) {
+    section .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
         flex-direction: column;
-        align-items: center;
     }
 
-    #about img {
-        max-width: 400px;
+    .about-responsivo h2,
+    .about-responsivo p {
+        text-align: left;
+    }
+
+    .loja {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .lista-produtos li {
+        max-width: 90%;
+        margin-bottom: 54px;
+    }
+    
+    .lista-produtos li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .central1 {
+        margin: 0;
+    }
+    
+    .central2 {
+        margin: 0;
+    }
+
+    section p {
         margin-bottom: 16px;
     }
-
-    #about div {
-        text-align: center;
-    }  
-}
 }
