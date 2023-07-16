@@ -134,6 +134,26 @@ button {
 }
 
 @media screen and (min-width: 641px) and (max-width: 1023px) {  
+    section {
+        padding: 24px 80px;
+    }
+
+    header {
+        padding: 24px 80px;
+    }
+
+    #produtos h2 {
+        margin-bottom: 26px;
+    }
+
+    #about p {
+    margin-bottom: 0px;
+    }
+
+    #about img {
+        max-width: 100%;
+    }
+
     section .container {
         display: flex;
         justify-content: space-between;
@@ -152,6 +172,10 @@ button {
         object-fit: cover;
         margin: 0;
         margin-bottom: 20px;
+    }
+
+    .lista-produtos {
+        justify-content: space-between;
     }
     
     .lista-produtos li {
@@ -162,10 +186,42 @@ button {
     .lista-produtos li img {
         width: 100%;
         height: auto;
-    } 
+    }
+
+    .central1 {
+        margin-right: 0px;
+    }
+
+    .altura p {
+        margin-bottom: 14px;
+    }
 }
 
 @media screen and (max-width: 640px) {
+    section {
+        padding: 24px 50px;
+    }
+
+    header {
+        padding: 24px 50px;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    #produtos h2 {
+        margin-bottom: 26px;
+    }
+
+    #about p {
+    margin-bottom: 0px;
+    }
+
+    #about img {
+        max-width: 100%;
+    }
+
     section .container {
         display: flex;
         justify-content: space-between;
@@ -187,8 +243,8 @@ button {
     }
     
     .lista-produtos li {
-        max-width: 90%;
-        margin-bottom: 54px;
+        max-width: 100%;
+        margin-bottom: 38px;
     }
     
     .lista-produtos li img {
